@@ -22,8 +22,9 @@ func main() {
 	}
 	fmt.Printf("\n\nThe names of the participants are as follows:\n")
 	for i := 0; i < n; i++ {
-		if arr[i] != "#stop" {
-			fmt.Printf("%d. %s\n", i+1, arr[i])
+		if arr[i] == "#stop" {
+			break
 		}
+		fmt.Printf("%d. %s\n", i+1, arr[i])
 	}
 }
