@@ -6,10 +6,9 @@ import (
 
 func main() {
 	fmt.Printf("Welcome to the Test_repository!!")
-	var arr [50]string
-	fmt.Printf("\n\nCurrent array hosts nothing. Add a few names to your array! It can hold upto %d names!\n\nEnter the number of people you wanna add the names of: ", cap(arr))
-	var n int
-	fmt.Scanf("%d", &n)
+	var arr [100]string
+	fmt.Printf("\n\nCurrent array hosts nothing. Add a few names to your array! It can hold upto %d names!\n\n***Say #stop to stop the input***", cap(arr))
+	n := cap(arr)
 	for i := 0; i < n; i++ {
 		fmt.Printf("\nName of #%d person: ", i+1)
 		fmt.Scanf("%s", &arr[i])
